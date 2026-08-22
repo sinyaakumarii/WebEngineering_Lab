@@ -1,51 +1,115 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset = "UTF-8"/>
-        <meta name = "viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="description", content="A Short page summary for search engines."/>
-        <title> My Profile </title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Sinya's personal profile and contact page."/>
+    <title>My Profile - Sinya</title>
+</head>
+<body>
 
-     </head>
-     <body>
-        
-               <h1>Hello</h1>
-        <p> This is MY First Paragraph.</p>
-        <header>
-            <h1> sinya </h1>
-            <nav>
-                <ul>
-                    <li><a href = "Sukkur">Home</a></li>
-                     <li><a href = "My self sinya pursing my degree from sukkur iba in bscs">about</a></li>
-                    <li><a href = "tel:0303967...">contact</a></li>
-                    </ul>
-                    </nav>
-                    </header>
-            <main>
-                <article>
-                    <h2>About Me </h2>
-                    <p>Hello! I am an AI assistant trained by Google. I specialize in processing information, writing code, and helping users solve problems efficiently.</p>
-                   </article>
+    <header>
+        <h1>Sinya</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                   <section>
-                     <h2>Skills</h2>
-                     <ul>
-                        <li>NLP</li>
-                        <li>ML</li>
-                        <li>Code Generation</li>
-                <li>Data Analysis</li>
-                        </ul>
-                    </section>
-                    </main>
-                    <aside>
+    <main>
+        <figure>
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&q=80" alt="A laptop on a wooden desk showing code, representing computer science studies">
+            <figcaption>My coding workspace.</figcaption>
+        </figure>
+
+        <article id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am Sinya, currently pursuing my degree in BSCS from Sukkur IBA University. I am passionate about web development, computer science, and solving complex problems.</p>
+        </article>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>Data Structures</li>
+                <li>Problem Solving</li>
+            </ul>
+        </section>
+
+        <!-- Class Activity D: Contact Form Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                
+                <!-- Text Input -->
+                <div>
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <!-- Email Input -->
+                <div>
+                    <label for="emailAddress">Email Address:</label>
+                    <input type="email" id="emailAddress" name="emailAddress" required>
+                </div>
+
+                <!-- Tel Input -->
+                <div>
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                </div>
+
+                <!-- Select Input -->
+                <div>
+                    <label for="inquiryType">Inquiry Type:</label>
+                    <select id="inquiryType" name="inquiryType" required>
+                        <option value="">-- Choose an option --</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="project">Project Collaboration</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <!-- Textarea Input -->
+                <div>
+                    <label for="userMessage">Message:</label>
+                    <textarea id="userMessage" name="userMessage" rows="4" required></textarea>
+                </div>
+
+                <!-- Checkbox Input -->
+                <div>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to submit this information</label>
+                </div>
+
+                <!-- Submit Button -->
+                <div>
+                    <button type="submit">Send Message</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <aside>
         <h2>Currently learning...</h2>
-        <p>New ways to structure data, understand complex context, and provide even more helpful responses.</p>
+        <p>Building structured web interfaces, semantic HTML5 tags, and modern web application development.</p>
     </aside>
 
     <footer>
-        <p>&copy; 2026 sinya. All rights reserved.</p>
-        <p>Get in touch: <a href="mailto:sinya@example.com">sinya@example.com</a></p>
+        <p>&copy; 2026 Sinya. All rights reserved.</p>
+        <p>Get in touch: <a href="tel:03039670000">Call Me</a> | <a href="mailto:sinya@example.com">Email Me</a></p>
+        <p>
+            Find me on:
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a> | 
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </p>
     </footer>
 
-     </body>
-     </html>
+</body>
+</html>
